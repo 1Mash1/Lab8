@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "postinstall": "cd ./test && npm i || true",
+    "test": "cd ./test && npm run test",
+    "build": "echo \"Dummy build script for Autocode\"",
+    "sass": "sass src/styles:src/dist",
+    "sass-watch": "sass --watch src/styles:src/dist",
+    "build-css": "sass src/styles/style.scss src/dist/style.css && sass src/styles/mobile.scss src/dist/mobile.css",
+    "build-min": "sass src/styles/style.scss src/dist/style.min.css --style=compressed && sass src/styles/mobile.scss src/dist/mobile.min.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
